@@ -1,0 +1,117 @@
+.background-container {
+    background-image: url('../static/images/Home_cover_image.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+  }
+  
+  .icon{
+    width: 80px;
+    height: 80px;
+  }
+  
+  #title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+
+#description{
+    font-family: var();
+    color: rgb(183, 181, 181);
+}
+
+.searchContainer{
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    width: 1000px;
+    height: 100px;
+    border-radius: 15px; 
+}
+
+ @media (max-width: 768px) {
+    .searchContainer {
+        min-height: 120px; 
+        min-width: 400px;
+    }
+    .searchInput{
+        margin-bottom: 5px;
+
+    }
+    .searchHome{
+       margin-left: 0px;
+       color: rebeccapurple;
+    }
+    .homeForm{
+        max-width:380px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+    .searchContainer {
+        min-height: 120px; 
+        min-width: 400px;
+    }
+    .searchInput{
+        margin-bottom: 5px;
+
+    }
+    .searchHome{
+       margin-left: 0px;
+       color: rebeccapurple;
+    }
+    .homeForm{
+        max-width:380px;
+    }
+}
+
+@media (max-width: 990px) {
+    .searchContainer {
+        min-height: 150px; 
+    }
+    .searchInput{
+        margin-bottom: 5px;
+
+    }
+    .searchHome{
+       margin-left: 25%;
+    }
+}
+@media (min-width: 990px) and (max-width: 1200px){
+    .searchContainer {
+        min-height: 120px; 
+        min-width:875px;
+    }
+    .searchInput{
+        margin-bottom: 5px;
+
+    }
+   
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .searchContainer {
+        min-height: 120px; 
+        min-width:870px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .searchContainer {
+        min-height: 120px; 
+        min-width:850px;
+    }
+    
+}
+.searchButton{
+    background-color: rgb(57, 108, 240) !important;
+    width: 100px !important;
+    height: 40px ;
+    color: white !important;
+}
+.searchButton:hover{
+    background-color: rgb(11, 68, 211) !important;
+}

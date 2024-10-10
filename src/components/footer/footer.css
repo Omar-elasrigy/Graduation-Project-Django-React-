@@ -1,0 +1,171 @@
+.footer{
+   background-color: #202942;
+   position: relative;
+   width: 100%;
+   min-height: 350px;
+   padding: 3rem 0;
+   margin: 0 100px 0px 0px;
+}
+.footer-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.footer-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col{
+  min-width: 250px;
+  color:#f2f2f2f2;
+  font-family: poppins;
+  padding:0 2rem;
+}
+.footerLogo {
+  width: 100px;
+  margin-bottom:25px;
+}
+.footer-col h3{
+  color:#0a66c2;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.footer-col h3::after{
+  content: '';
+  height:3px;
+  width:0px;
+  background-color: #0a66c2;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition: 0.3s ease;
+
+}
+.footer-col h3:hover::after{
+  width:30px
+}
+.footer-col .media a i{
+  margin-top:2rem;
+  margin-right: 5px;
+  transition: 0.3s ease;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.footer-col .media a i:hover{
+  transform: scale(1.5);
+}
+.fa-facebook {
+  background: white;
+  color: #3b5998;
+}
+.fa-instagram{
+  color: white;
+}
+.fa-youtube{
+  color: red;
+}
+.fa-twitter{
+  color: #009efa;
+}
+.fa-linkedin{
+  color: #0a66c2;
+}
+.footer-col .links a{
+  display: block;
+  text-decoration: none;
+  color:#f2f2f2;
+  margin-bottom: 5px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.footer-col .links a::before{
+  content:'';
+  height: 16px;
+  width:3px;
+  position: absolute;
+  top:5px;
+  left:-10px;
+  background-color: #0a66c2;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.footer-col .links a:hover::before{
+  opacity: 1;
+}
+.footer-col .links a:hover{
+  transform: translateX(-8px);
+  color:#0a66c2;
+}
+.footer-col .contact-details{
+  display: inline-flex;
+  justify-content: space-between;
+}
+.footer-col .contact-details i{
+  margin-right:15px;
+  display: inline-block;
+}
+
+/********** Responsive Design ********/
+@media(max-width:900px)
+{
+.footer-row{
+  flex-direction: column;
+}
+.footer-col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+}
+@media(max-width:768px)
+{
+.footer-row{
+  flex-direction: column;
+}
+.footer-col{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .footerLogo{
+    display: none;
+  }
+
+  .footerDescription{
+    display: none;
+  }
+
+  .departmentFooter{
+    display: none;
+  }
+  .footerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactFooter{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media{
+  justify-content: center;
+  }
+}
